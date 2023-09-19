@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ECommerce</title>
+</head>
+<body>
+    <fieldset th:each="u : ${lista}">
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td th:text="${u.nome}"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td th:text="${u.email}"></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
