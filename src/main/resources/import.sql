@@ -1,1 +1,1 @@
-INSERT INTO tb_usuario (nome, email, senha) VALUES ('Fabrício', 'fabricio@email.com', 'fabricio3010')
+INSERT INTO tb_usuario (nome, senha) VALUES ('Fabrício','fabricio3010')
