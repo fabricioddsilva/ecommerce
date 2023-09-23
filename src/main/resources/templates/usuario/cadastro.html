@@ -5,10 +5,10 @@
     <title>Cadastro Usuario</title>
 </head>
 <body>
-  <form th:object="${dados}" action="usuario/cadastro/confirmar" method="post">
-    <input type="text" name="Nome" placeholder="Nome" th:field="*{nome}">
+  <form  action="cadastrar" method="post">
+    <input type="text" name="nome" placeholder="Nome" >
     <br>
-    <input type="password" name="Senha" placeholder="Senha" th:field="*{senha}">
+    <input type="password" name="nenha" placeholder="Senha">
     <br>
       <button type="submit">Confirmar</button>
   </form>

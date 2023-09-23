@@ -5,11 +5,11 @@
     <title>Login de Usuario</title>
 </head>
 <body>
-<form th:object="${dados}" action="usuario/login/confirmar" method="post">
-  <input type="text" name="Nome" placeholder="Nome" th:field="*{nome}">
+<form action="logar" method="post">
+  <input type="text" name="nome" placeholder="Nome">
   <br>
-  <input type="password" name="Senha" placeholder="Senha" th:field="*{senha}">
-  <br>
+  <input type="password" name="senha" placeholder="Senha">
+  <br><h3 th:if="${erro} != null" th:text="${erro}"></h3><br>
   <button type="submit">Confirmar</button>
 </form>
 </body>

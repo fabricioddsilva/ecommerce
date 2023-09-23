@@ -8,6 +8,13 @@
 
     <button><a href="usuario/cadastro">Cadastro de Usuários</a></button>
     <button><a href="loja/cadastro">Cadastro de Loja</a></button>
+    <button><a href="usuario/login">Login de Usuario</a></button>
+    <button><a href="usuarios">Lista de Usuarios</a></button>
+
+    <br>
+    <div th:if="${logado != null}">
+        <h2 th:text="${logado.nome}"></h2>
+    </div>
 
 </body>
 </html>

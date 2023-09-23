@@ -5,7 +5,7 @@
   <title>Lista de Usuários</title>
 </head>
 <body>
-<fieldset th:each="u : ${lista}">
+<fieldset th:each="u:${usuarios}">
   <table>
     <tr>
       <td>Nome:</td>
@@ -13,5 +13,6 @@
     </tr>
   </table>
 </fieldset>
+<a href="/"><button>Voltar</button></a>
 </body>
 </html>
